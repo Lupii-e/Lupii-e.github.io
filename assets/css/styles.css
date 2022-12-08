@@ -16,7 +16,8 @@
   --sat: 90%;
   --lig: 61%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+  /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -56,10 +57,13 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .5s; /* For animation dark mode */
+  transition: .5s;
+  /* For animation dark mode */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: 600;
 }
@@ -158,9 +162,9 @@ body.dark-theme {
 .profile__perfil {
   width: 100px;
   height: 100px;
-  background: linear-gradient(180deg, 
-              hsla(var(--hue), var(--sat), var(--lig), 1) 0%, 
-              hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
+  background: linear-gradient(180deg,
+      hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
+      hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -230,7 +234,7 @@ body.dark-theme {
   font-weight: 500;
 }
 
-.profile__buttons, 
+.profile__buttons,
 .profile__buttons-small {
   display: flex;
   align-items: center;
@@ -343,16 +347,16 @@ body.dark-theme {
   height: 100%;
   bottom: -100%;
   left: 0;
-  background: linear-gradient(180deg, 
-              hsla(var(--hue), 24%, 40%, .3) 0%, 
-              hsla(var(--hue), 24%, 4%, 1) 95%);
+  background: linear-gradient(180deg,
+      hsla(var(--hue), 24%, 40%, .3) 0%,
+      hsla(var(--hue), 24%, 4%, 1) 95%);
   display: grid;
   align-items: flex-end;
   padding: 1.5rem 1.25rem;
   transition: .5s;
 }
 
-.projects__subtitle, 
+.projects__subtitle,
 .projects__title {
   color: #fff;
 }
@@ -376,13 +380,14 @@ body.dark-theme {
 }
 
 /*=============== SKILLS ===============*/
-.kotak{
-display: -ms-grid;
-display: grid;
-grid-gap: 1rem;
+.kotak {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+
 }
 
-.kotak{
+.kotak {
   padding: 1rem 1.2rem;
   display: -ms-grid;
   display: grid;
@@ -392,22 +397,22 @@ grid-gap: 1rem;
   margin: 10px;
 }
 
-img.potokartu{
+img.potokartu {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
-     border-radius: 20px;
-     margin-bottom: 10px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
-.judul{
+.judul {
   font-size: var(--h2-font-size);
-  color:var(--title-color);
+  color: var(--title-color);
   font-weight: 600;
 }
 
-.deskripsi{
+.deskripsi {
   font-size: var(--small-font-size);
 }
 
@@ -508,6 +513,7 @@ img.potokartu{
   .profile__info {
     column-gap: 1.5rem;
   }
+
   .profile__buttons {
     flex-direction: column;
     row-gap: 1rem;
@@ -553,27 +559,34 @@ img.potokartu{
   .profile {
     padding-top: 4rem;
   }
+
   .profile__border {
     width: 135px;
     height: 135px;
     margin-bottom: 1rem;
   }
+
   .profile__perfil {
     width: 120px;
     height: 120px;
   }
+
   .profile__perfil img {
     width: 90px;
   }
+
   .profile__profession {
     margin-bottom: 1.5rem;
   }
+
   .profile__info {
     column-gap: 3rem;
   }
+
   .profile__info-description {
     font-size: var(--small-font-size);
   }
+
   .profile__buttons {
     column-gap: 2rem;
   }
@@ -581,6 +594,7 @@ img.potokartu{
   .projects__content {
     gap: 2rem 3rem;
   }
+
   .projects__modal {
     padding: 1.5rem;
   }
