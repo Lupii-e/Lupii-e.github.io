@@ -388,13 +388,20 @@ body.dark-theme {
 }
 
 .kotak {
-  padding: 1rem 1.2rem;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 2px;
+}
+
+.kartu {
+  padding: 10px 20px 0px 20px;
+  max-width: 400px;
   border: 1px solid var(--first-color);
   border-radius: 20px;
-  margin: 10px;
+  margin: 0%;
+
 }
 
 img.potokartu {
@@ -404,6 +411,10 @@ img.potokartu {
   object-fit: cover;
   border-radius: 20px;
   margin-bottom: 10px;
+}
+
+img.potokartu:hover {
+  height: 400px;
 }
 
 .judul {
@@ -416,19 +427,64 @@ img.potokartu {
   font-size: var(--small-font-size);
 }
 
-.tombol {
+.shopee {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: .5rem;
-  background-color: var(--first-color);
+  background-color: #fc8c03;
   color: #fff;
   padding: 1rem 1.5rem;
   border-radius: 20px;
   transition: .2s;
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
   font-weight: 500;
-  margin: 10px;
+  margin: 10px 30px 10px 30px;
+}
+
+.shopee:hover {
+  border: solid #fff;
+  margin: 10px 80px 10px 80px;
+}
+
+.pdf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .5rem;
+  background-color: #58a851;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  transition: .2s;
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+  font-weight: 500;
+  margin: 10px 30px 10px 30px;
+}
+
+.pdf:hover {
+  border: solid #fff;
+  margin: 10px 80px 10px 80px;
+}
+
+.yt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .5rem;
+  background-color: #d10404;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  transition: .2s;
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+  font-weight: 500;
+  margin: 10px 30px 10px 30px;
+}
+
+.yt:hover {
+  border: solid #fff;
+  margin: 10px 70px 10px 70px;
 }
 
 
@@ -437,10 +493,26 @@ img.potokartu {
   gap: 2rem 3rem;
 }
 
+.skills__area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .skills__title {
-  font-size: var(--h3-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--h2-font-size);
   text-align: center;
   margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  transition: .2s;
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+  max-width: 400px;
+  background: var(--first-color)
 }
 
 .skills__box {
