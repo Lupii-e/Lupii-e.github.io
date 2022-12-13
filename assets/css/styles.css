@@ -415,6 +415,7 @@ img.potokartu {
 
 img.potokartu:hover {
   height: 400px;
+  transition: .3s ease-in;
 }
 
 .judul {
@@ -444,7 +445,7 @@ img.potokartu:hover {
 
 .shopee:hover {
   border: solid #fff;
-  margin: 10px 80px 10px 80px;
+  margin: 10px 50px 10px 50px;
 }
 
 .pdf {
@@ -464,7 +465,7 @@ img.potokartu:hover {
 
 .pdf:hover {
   border: solid #fff;
-  margin: 10px 80px 10px 80px;
+  margin: 10px 50px 10px 50px;
 }
 
 .yt {
@@ -484,7 +485,7 @@ img.potokartu:hover {
 
 .yt:hover {
   border: solid #fff;
-  margin: 10px 70px 10px 70px;
+  margin: 10px 50px 10px 50px;
 }
 
 
@@ -500,11 +501,12 @@ img.potokartu:hover {
   flex-direction: column;
 }
 
+/* Pemula / baru kenal saham */
 .skills__title {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   text-align: center;
   margin-bottom: 1.5rem;
   padding: 1rem 1.5rem;
